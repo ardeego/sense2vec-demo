@@ -5,7 +5,7 @@
 'use strict';
 
 {
-    const defaultWord = 'natural language processing';
+    const defaultWord = 'climate%20change';
     const defaultSense = 'auto';
 
     const loading = () => document.body.classList.toggle('loading');
@@ -36,7 +36,9 @@
         const params = query.split('|').map(param => param.replace('_', ' '));
 
         const word = decodeURIComponent(getQueryVar('word') || params[0] || defaultWord);
-        const sense = getQueryVar('sense') || params[1] || defaultSense;
+        //const sense = getQueryVar('sense') || params[1] || defaultSense;
+        const sense = defaultSense;
+
 
         if(params) updateURL(word, sense);
         updateView(word, sense);
@@ -48,7 +50,9 @@
 
     const run = (
         word = $('#input').value || defaultWord,
-        sense = $('[name="sense"]:checked').value || defaultSense ) => {
+        //sense = $('[name="sense"]:checked').value || defaultSense ) => {
+        sense = defaultSense ) => {
+
             sense2vecDemo.find(word, sense);
             updateView(word, sense);
             updateURL(word, sense);
@@ -65,7 +69,7 @@
 
      const updateView = (word, sense) => {
         $('#input').value = word;
-        $(`[value="${sense}"]`).checked = true;
+        //$(`[value="${sense}"]`).checked = true;
         window.scrollTo(0, 0);
     }
 

@@ -1,10 +1,11 @@
 {
     "index": {
-        "title": "Semantic Analysis of the Reddit Hivemind",
-        "description": "Our neural network read every comment posted to Reddit in 2015, and built a semantic map using word2vec and spaCy.",
-        "github": "explosion/sense2vec-demo",
-        "readmore": "https://explosion.ai/blog/sense2vec-with-spacy",
-        "api": "https://api.explosion.ai/sense2vec/",
+        "title": "Semantic Analysis of the Guardian and Washington Post",
+        "description": "Data: news articles 2016-2017, Semantic map using word2vec and spaCy.",
+        "github": "ardeego/sense2vec-demo",
+        "readmore": "",
+        "api2": "https://api.explosion.ai/sense2vec/",
+        "api": "http://localhost:8000/",
 
         "scripts": [
             "sense2vec",
