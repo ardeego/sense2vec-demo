@@ -5,7 +5,8 @@
         "github": "ardeego/sense2vec-demo",
         "readmore": "",
         "api2": "https://api.explosion.ai/sense2vec/",
-        "api": "http://localhost:8000/",
+        "api1": "http://localhost:7000/",
+        "api": "http://semantic.youneeq.ca:8000"
 
         "scripts": [
             "sense2vec",
