@@ -1,12 +1,12 @@
 {
     "index": {
-        "title": "Semantic Analysis of the Guardian and Washington Post",
+        "title": "Youneeq's Semantic AI",
         "description": "Data: news articles 2016-2017, Semantic map using word2vec and spaCy.",
         "github": "ardeego/sense2vec-demo",
         "readmore": "",
         "api2": "https://api.explosion.ai/sense2vec/",
         "api1": "http://localhost:7000/",
-        "api": "http://semantic.youneeq.ca:8000"
+        "api": "http://semantic.youneeq.ca:8000/",
 
         "scripts": [
             "sense2vec",
